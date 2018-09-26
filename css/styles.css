@@ -112,7 +112,7 @@ nav h1 a {
 }
 .filter-options h2 {
   color: white;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
@@ -121,12 +121,21 @@ nav h1 a {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 11pt;
-  height: 35px;
+  font-size: 3em;
+  height: 2em;
   letter-spacing: 0;
   margin: 10px;
-  padding: 0 10px;
-  width: 200px;
+  padding: 0 0.4em;
+  width: calc(50% - 24px);
+  max-width: 100%;
+}
+
+select#neighbourhoods-select::after {
+  content: "<>";
+}
+
+.filter-options select option {
+  font-size: 0.4em;
 }
 
 /* ====================== Restaurant Listing ====================== */
