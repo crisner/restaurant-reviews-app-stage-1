@@ -149,6 +149,9 @@ select#neighbourhoods-select::after {
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   list-style: outside none none;
   margin: 0;
   padding: 30px 15px 60px;
@@ -162,7 +165,7 @@ select#neighbourhoods-select::after {
   min-height: 380px;
   padding: 0.8em;
   text-align: left;
-  /* width: 270px; */
+  /* width: 28%; */
   max-width: 100%;
 }
 #restaurants-list .restaurant-img {
