@@ -60,9 +60,9 @@ nav h1 {
 }
 nav h1 a {
   color: #fff;
-  font-size: 14pt;
+  font-size: 1.8rem;
   font-weight: 200;
-  letter-spacing: 10px;
+  letter-spacing: 0.6rem;
   text-transform: uppercase;
 }
 #breadcrumb {
