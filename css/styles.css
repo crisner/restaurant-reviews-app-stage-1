@@ -60,7 +60,7 @@ nav h1 {
 }
 nav h1 a {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: 200;
   letter-spacing: 0.6rem;
   text-transform: uppercase;
@@ -113,7 +113,7 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  /* height: 50px; */
+  height: 50px;
   padding: 1em 0 0;
   background-color: #3397DB;
   align-items: center;
@@ -129,21 +129,13 @@ nav h1 a {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 3em;
-  height: 2em;
+  font-size: 1em;
+  height: 1.8em;
   letter-spacing: 0;
-  margin: 10px;
-  padding: 0 0.4em;
-  width: calc(50% - 24px);
+  margin: 10px 0 0 10px;
+  /* padding: 0 0.4em; */
+  width: calc(50% - 20px);
   max-width: 100%;
-}
-
-select#neighbourhoods-select::after {
-  content: "<>";
-}
-
-.filter-options select option {
-  font-size: 0.4em;
 }
 
 /* ====================== Restaurant Listing ====================== */
