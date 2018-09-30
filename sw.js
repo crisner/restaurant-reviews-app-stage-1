@@ -1,3 +1,4 @@
+// Files to be cached
 const cacheFiles = [
     '/',
     '/index.html',
@@ -29,6 +30,7 @@ const cacheFiles = [
     '/img/10__480_360.jpg'
 ];
 
+// Install ServiceWorker and add to cache
 self.addEventListener('install', function(e) {
     e.waitUntil(
         caches.open('v1').then(function(cache) {
@@ -37,6 +39,7 @@ self.addEventListener('install', function(e) {
     );
 });
 
+// Fetch from network if a match is not found in cache
 self.addEventListener('fetch', function(e) {
     e.respondWith(
         caches.match(e.request).then(function(response) {
