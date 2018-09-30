@@ -4,6 +4,7 @@ let restaurants,
 var newMap
 var markers = []
 
+// Register serviceWorker
 if('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').then(function(reg) {
     console.log('Service worker: successful');
