@@ -23,11 +23,13 @@
       <div id="map"></div>
     </section>
     <section>
-      <div class="filter-options">
+      <div tabindex="0" class="filter-options">
         <h2>Filter Results</h2>
+        <label for="neighborhoods-select"></label>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
+        <label for="cuisines-select"></label>
         <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
