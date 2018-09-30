@@ -6,7 +6,7 @@ var markers = []
 
 if('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').then(function(reg) {
-    console.log('Service worker: successful', reg);
+    console.log('Service worker: successful');
   }).catch(function(error) {
     console.log('Service worker: failed', error);
   })
